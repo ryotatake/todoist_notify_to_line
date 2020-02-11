@@ -1,7 +1,3 @@
-function test() {
-  Logger.log(getActiveTasks({"filter": "(today|overdue)"}));
-}
-
 function getActiveTasks(params) {
   var url = "https://api.todoist.com/rest/v1/tasks"
   if (params) {
